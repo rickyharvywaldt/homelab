@@ -12,6 +12,10 @@ spec:
       labels:
         app: linkding
     spec:
+      securityContext:
+        fsGroup: 33
+        runAsUser: 33
+        runAsGroup: 33
       volumes:
         - name: linkding-data
           persistentVolumeClaim:
