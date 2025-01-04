@@ -1,0 +1,31 @@
+apiVersion: v1
+data:
+    credentials.json: ENC[AES256_GCM,data:vUQgnZgNsnglFTdcj4Zv2er5CEYhzVqQ1lYZbCiONU6gBUDBsNFbUiUdSPRVqYU8YacFiTZkhrRz3YfhDoDmmq2Fev+F7IpKsQwviV0tObRUi8gbF9aQQUzlrn7fCjHSpatXSos9pwKZ7Mg2592Isj45tDEjeoHFJDXmZBSfPw0HkkVfC+avMQwoW259ZmffLwChnAQZEvdR/N+HRG/a4iA6S2rZzt0qCwXL6tZsOmAXIEL99MA/CHAyj0Ml7nlS17hyzsU/CdfMIRDvWJITq1Ak722kvihv,iv:8avMTF97M5AVkFG1mqXoz0k0ElZkzA+er2al+GdAULg=,tag:OjwvP5RELBHknlvqZaBsQw==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: "2025-01-03T17:57:42Z"
+    name: tunnel-cred
+    namespace: linkding
+    resourceVersion: "379864"
+    uid: d430a6c8-b7e9-42bf-8854-8a393947dd66
+type: Opaque
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age16k3tvqu25m3ze8kcgd6gyxnt7xylyy5zrkpzl48vafcqldecu3ass2hpm4
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNd3hYaXk0dy9QakdrKzdx
+            ZVh6R0NFM2c4ZU80NXJpZjJyVm9OUE1XMDNJCjZIaXQ4TytodTV5L2lXdW5qMUNz
+            aFdEN25FNHBTZkx2V24zWVBqQklGTncKLS0tIHFRbHdEQ2ZPOFhTQ0VrRFJkM0dP
+            ZnZQZHdGT05uZXNuZnVOSkdWY2JyS0kKqBpFYyIK4T3707u6a6QnJ07BS8bUoBpj
+            b4Cpe3+LurpcoxYc+ib4sQThQF83mVP5NAWUNd7NS7lTZYYnLSxK7w==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-01-04T12:39:32Z"
+    mac: ENC[AES256_GCM,data:s+9mKBx4FUiw7UxdJ9W7RtbKDgG6asqPz4lBFHuR2Y5VM1YQ14bVjkVOwIhWeoTI+S7GhoujUxXHqcdHUcQOEfz7h6q7tASMpb0sOPgeowExhfclaTv3btfjrdqr9LAudLqopzs4i4NLZJybKm+b+0SSdZ128A6kf1YfkF9e9ps=,iv:aBL3FS8XPAtDZvURlTjran5g119XQzI5n960NGvjCe8=,tag:jEsy+DTTjv+dl8sjcmdWVA==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.3
