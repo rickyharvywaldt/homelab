@@ -3,3 +3,5 @@ kind: Kustomization
 namespace: petclinic
 resources:
   - ../../base/petclinic/
+  - cloudflare.yaml
+  - cloudflare-secret.yaml
