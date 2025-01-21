@@ -15,6 +15,10 @@ spec:
       # securityContext:
       #   runAsUser: 1000
       #   runAsGroup: 3000
+      volumes:
+        - name: petclinic-data
+          persistentVolumeClaim:
+            claimName: petclinic-data-pv-claim
       containers:
         - name: petclinic
           image: rwaldt/petclinic:v4
@@ -22,3 +26,6 @@ spec:
             - containerPort: 8080
           securityContext:
             allowPrivilegeEscalation: false
+          volumeMounts:
+            - mountPath: "/etc/petclinic/data"
+              name: petclinic-data
