@@ -1,3 +1,5 @@
 age.agekey
 *.json
 !/renovate.json
+.envrc
+kubeconfig
