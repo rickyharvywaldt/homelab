@@ -1,5 +1,5 @@
 age.agekey
-*.json
-!/renovate.json
+# *.json
+# !/renovate.json
 .envrc
 kubeconfig
