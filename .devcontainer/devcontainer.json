@@ -1,7 +1,7 @@
 {
     "image": "mcr.microsoft.com/devcontainers/base:debian",
     "features": {
-        "ghcr.io/devcontainers-extra/features/tmux-homebrew:1"
+        "ghcr.io/devcontainers-extra/features/tmux-homebrew:1": {}
     },
     "onCreateCommand": "sudo chsh -s /usr/bin/zsh $USER",
     "settings": {
