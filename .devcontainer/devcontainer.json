@@ -1,7 +1,7 @@
 {
     "image": "mcr.microsoft.com/devcontainers/base:debian",
     "features": {
-        "ghcr.io/devcontainers-contrib/features/homebrew": {}
+        "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {}
     },
     "onCreateCommand": "sudo chsh -s /usr/bin/zsh $USER",
     "settings": {
