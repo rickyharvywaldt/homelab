@@ -3,3 +3,4 @@ age.agekey
 # !/renovate.json
 .envrc
 kubeconfig
+talosconfig
