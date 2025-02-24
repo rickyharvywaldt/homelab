@@ -5,7 +5,7 @@ Learning how to build my own Kubernetes HomeLab. It's currently running K3s on U
 
 Quick update: replaced K3s on Ubuntu Server with Talos Linux. 
 
-I had some issues running Homebrew on Linux from ARM64, so I replaced DevPod with [Mise-en-place](https://github.com/jdx/mise).
+I had some issues running Homebrew on Linux from ARM64 in DevPod, so now I'm using [Mise-en-place](https://github.com/jdx/mise).
 Run 
 ```
 mise i
