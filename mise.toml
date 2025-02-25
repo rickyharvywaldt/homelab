@@ -1,3 +1,5 @@
 [tools]
+flux2 = "latest"
+k9s = "latest"
 kubectl = "latest"
 talosctl = "latest"
