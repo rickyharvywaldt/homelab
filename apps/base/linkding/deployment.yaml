@@ -16,10 +16,10 @@ spec:
 #        fsGroup: 33
 #        runAsUser: 33
 #        runAsGroup: 33
-      volumes:
-        - name: linkding-data
-          persistentVolumeClaim:
-            claimName: linkding-data-pv-claim
+#      volumes:
+#        - name: linkding-data
+#          persistentVolumeClaim:
+#            claimName: linkding-data-pv-claim
       containers:
         - name: linkding
           image: sissbruecker/linkding:1.36.0
@@ -34,6 +34,6 @@ spec:
 #
 #          securityContext:
 #            allowPrivilegeEscalation: false
-          volumeMounts:
-            - mountPath: "/etc/linkding/data"
-              name: linkding-data
+#          volumeMounts:
+#            - mountPath: "/etc/linkding/data"
+#              name: linkding-data
