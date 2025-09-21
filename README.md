@@ -11,3 +11,5 @@ Run
 mise i
 ```
 to install all the dev tools (currently only Kubectl). 
+
+Setup devcontainers.
