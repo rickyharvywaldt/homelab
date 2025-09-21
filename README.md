@@ -12,4 +12,4 @@ mise i
 ```
 to install all the dev tools (currently only Kubectl). 
 
-Setup devcontainers.
+I'm also using devcontainers now.
