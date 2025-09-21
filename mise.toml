@@ -1,0 +1,5 @@
+[tools]
+bat = "latest"
+
+[env]
+KUBECONFIG = "/workspaces/homelab/cerebro/cerebro-kubeconfig"
