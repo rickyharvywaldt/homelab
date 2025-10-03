@@ -4,7 +4,10 @@
 
 sudo apt update && sudo apt install vim -y
 
-curl -OL "https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.30.0/kubeseal-0.30.0-linux-amd64.tar.gz" && \
-tar -xvzf kubeseal-0.30.0-linux-amd64.tar.gz kubeseal && \
-sudo install -m 755 kubeseal /usr/local/bin/kubeseal
+# curl -OL "https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.30.0/kubeseal-0.30.0-linux-amd64.tar.gz" && \
+# tar -xvzf kubeseal-0.30.0-linux-amd64.tar.gz kubeseal && \
+# sudo install -m 755 kubeseal /usr/local/bin/kubeseal
 
+wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
