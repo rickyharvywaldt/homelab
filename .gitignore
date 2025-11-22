@@ -5,3 +5,5 @@ age.agekey
 kubeconfig
 talos/
 cerebro/
+*.tfstate
+*.tfstate.*
