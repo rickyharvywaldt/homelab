@@ -5,6 +5,9 @@ age.agekey
 kubeconfig
 talos/
 cerebro/
+*.tfvars
+*.tfvars.json
 .terraform/
 *.tfstate
 *.tfstate.*
+.terraform.lock.hcl
