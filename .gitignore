@@ -5,6 +5,7 @@ age.agekey
 kubeconfig
 talos/
 cerebro/
+terraform-talos/
 *.tfvars
 *.tfvars.json
 .terraform/
